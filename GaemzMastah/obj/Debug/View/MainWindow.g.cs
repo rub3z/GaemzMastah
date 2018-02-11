@@ -92,7 +92,7 @@ namespace TestingGUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TestingGUI;component/view/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GaemzMastah;component/view/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\View\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
