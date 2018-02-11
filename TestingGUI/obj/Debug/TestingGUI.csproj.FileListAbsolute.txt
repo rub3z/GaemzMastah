@@ -1,0 +1,15 @@
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\bin\Debug\TestingGUI.exe.config
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\bin\Debug\TestingGUI.exe
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\bin\Debug\TestingGUI.pdb
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\App.g.cs
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI_MarkupCompile.cache
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI_MarkupCompile.lref
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.g.resources
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.Properties.Resources.resources
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.csproj.GenerateResource.Cache
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.csproj.CoreCompileInputs.cache
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.exe
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.pdb
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\View\MainWindow.g.cs
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\View\MainWindow.baml
+D:\Workstation\CECS 491\TestingGUI\TestingGUI\obj\Debug\TestingGUI.csprojResolveAssemblyReference.cache
