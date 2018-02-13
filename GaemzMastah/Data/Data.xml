@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <App name="Notepad" fullPath="C:\\Windows\\system32\\notepad.exe" iconFullPath="pack://application:,,,/Images/Notepad.png"/>
+  <App name="Internet Explorer" fullPath="C:\\Program Files\\Internet Explorer\\iexplore.exe" iconFullPath="pack://application:,,,/Images/Icon/InternetExplorer.png"/>
+</Data>
+
+

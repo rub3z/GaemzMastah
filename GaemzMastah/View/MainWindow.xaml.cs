@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GaemzMastah.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -14,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TestingGUI
+namespace GaemzMastah
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,23 +25,8 @@ namespace TestingGUI
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new AppStructureViewModel();
         }
 
-        private void StartInternetExplorer_Click(object sender, RoutedEventArgs e)
-        {
-            Process ie = new Process();
-            ie.StartInfo.FileName = "iexplore.exe";
-            ie.Start();
-        }
-        private void StartNotepad_Click(object sender, RoutedEventArgs e)
-        {
-            Process notePad = new Process();
-            notePad.StartInfo.FileName = "notepad.exe";
-            notePad.Start();
-        }
-        private void PrintHelloWorld_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("HelloWorld");
-        }
     }
 }

@@ -1,11 +1,15 @@
-﻿<Window x:Class="TestingGUI.MainWindow"
+﻿<Window x:Class="GaemzMastah.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:TestingGUI"
+        xmlns:local="clr-namespace:GaemzMastah.ViewModel"
         mc:Ignorable="d"
         Title="GameManager" Height="800" Width="600">
+
+    <Window.Resources>
+        <local:AppStructureViewModel x:Key="AppStructureViewModel"/>
+    </Window.Resources>
     <!-- The border around the object-->
     <Border Padding="10">
         <Grid>
@@ -22,7 +26,7 @@
                 <!--Logo-->
                 <Image Name="Logo" DockPanel.Dock="Left">
                     <Image.Source>
-                        <BitmapImage UriSource="pack://application:,,,/TestingGUI;component/Data/Logo.png"/>
+                        <BitmapImage UriSource="pack://application:,,,/Data/Icon/Logo.png"/>
                     </Image.Source>
                 </Image>
                 <TextBlock Text="Birdstufz" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2 2 2 2" DockPanel.Dock="Right" FontSize="30"/>
@@ -33,10 +37,14 @@
             
             <!--Middle Panel-->
             <Border BorderThickness="5" Padding="10" BorderBrush="Black" Grid.Row="1">
-                 <WrapPanel Grid.Row="1" Orientation="Horizontal">
-                    <Button x:Name="PrintHelloWorldButton" Click="PrintHelloWorld_Click" Margin="10 10 10 10" Width="150" Height="150" Content="Print &quot;HelloWorld&quot;"/>
-                    <Button x:Name="StartNotepadButton" Click="StartNotepad_Click" Grid.Column="1" Margin="10 10 10 10" Width="150" Height="150" Content="Start Notpad"/>
-                    <Button x:Name="StartInternetExplorer" Click="StartInternetExplorer_Click" Grid.Column="2" Margin="10 10 10 10" Width="150" Height="150" Content="Start Internet Explorer"/>
+                 <WrapPanel Grid.Row="1" Orientation="Vertical">
+                    <ItemsControl ItemsSource="{Binding GameList}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding Name}" Command="{Binding ClickCommand,  Source={StaticResource AppStructureViewModel}}" CommandParameter="{Binding FullPath}" Margin="10 10 10 10" Width="150" Height="150"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </WrapPanel>
             </Border>
             <!--Lower Panel-->
@@ -48,7 +56,7 @@
                 <!--Logo-->
                 <Image Name="Logo2" DockPanel.Dock="Right">
                     <Image.Source>
-                        <BitmapImage UriSource="pack://application:,,,/TestingGUI;component/Data/Logo.png"/>
+                        <BitmapImage UriSource="pack://application:,,,/Data/Icon/Logo.png"/>
                     </Image.Source>
                 </Image>
                 <Canvas></Canvas>
