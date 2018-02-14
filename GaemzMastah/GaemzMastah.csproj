@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11D42C34-5550-4C11-868C-7040D25BE7F7}</ProjectGuid>
+    <ProjectGuid>{355A79D1-E09F-4577-9074-785925185914}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GaemzMastah</RootNamespace>
     <AssemblyName>GaemzMastah</AssemblyName>
@@ -54,22 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Model\AppItem.cs" />
     <Compile Include="Model\AppStructure.cs" />
     <Compile Include="ViewModel\AppStructureViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
-    <Compile Include="View\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="View\MainWindow.xaml.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -97,16 +94,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="Data\Icon\Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Data\Data.xml" />
+    <Resource Include="Data\Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Data\Icon\InternetExplorer.png" />
+    <Resource Include="Data\Icon\Logo.png" />
     <Resource Include="Data\Icon\Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Data.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

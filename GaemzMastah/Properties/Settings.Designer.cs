@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestingGUI.Properties
+namespace GaemzMastah.Properties
 {
 
 

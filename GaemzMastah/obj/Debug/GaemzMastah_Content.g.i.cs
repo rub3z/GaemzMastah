@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/icon/notepad.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/data.xml")]
 
 

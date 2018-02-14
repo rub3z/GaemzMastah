@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Xml;
 using System;
+using System.IO;
+
 namespace GaemzMastah.Model
 {   
     /// <summary>
@@ -15,7 +17,8 @@ namespace GaemzMastah.Model
         public static List<AppItem> getApplicationItems()
         {
             List<AppItem> listOfApplicaiton = new List<AppItem>();
-            XmlReader reader = XmlReader.Create("D:\\Workspace\\GaemzMastah\\GaemzMastah\\Data\\Data.xml");
+            string parent = System.IO.Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+            XmlReader reader = XmlReader.Create(@Path.Combine(parent, @"Data\Data.xml"));
             while (reader.Read())
             {
                 if ((reader.NodeType == XmlNodeType.Element) &&(reader.Name=="App"))
