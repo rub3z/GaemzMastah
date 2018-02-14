@@ -1,20 +1,19 @@
 ﻿using GaemzMastah.Model;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Input;
 
+/// <summary>
+/// This is the ViewModel which responsible for binding command to View
+/// </summary>
 namespace GaemzMastah.ViewModel
-{
-    public class AppStructureViewModel: INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged = (sender, e) => { };
+{   
 
+    public class AppStructureViewModel
+    {
+        /// <summary>
+        /// This is a list that has INotifyPropertyChanged implemented  
+        /// </summary>
         public ObservableCollection<AppItem> GameList { get; set; }
 
         private ICommand command;
@@ -25,20 +24,27 @@ namespace GaemzMastah.ViewModel
             }
         }
 
+        /// <summary>
+        /// Constructor for ViewModel
+        /// </summary>
         public AppStructureViewModel()
         {
             GameList = new ObservableCollection<AppItem>(AppStructure.getApplicationItems());
         }
 
+        /// <summary>
+        /// The command in which to be run
+        /// </summary>
+        /// <param name="s">The abosulte path of application</param>
         private void RunApp(object s)
         {
             System.Diagnostics.Process pProcess=new System.Diagnostics.Process();
-            //string s1 = "@" + "\""+s.ToString()+"\"";
-           // MessageBox.Show(s1);
             pProcess.StartInfo.FileName = s.ToString();
             pProcess.Start();
 
         }
+
+
 
 
     }

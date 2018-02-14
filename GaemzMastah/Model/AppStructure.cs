@@ -4,10 +4,14 @@ using System;
 namespace GaemzMastah.Model
 {   
     /// <summary>
-    /// This is the helper class to gather information
+    /// This is the helper class to AppItem
     /// </summary>
     class AppStructure
-    {
+    {   
+        /// <summary>
+        /// Gather information from Data.xml
+        /// </summary>
+        /// <returns> list of all applcations</returns>
         public static List<AppItem> getApplicationItems()
         {
             List<AppItem> listOfApplicaiton = new List<AppItem>();

@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GaemzMastah.ViewModel"
         mc:Ignorable="d"
-        Title="GameManager" Height="800" Width="600">
+        Title="GameManager" Height="800" Width="800">
 
+    <!--Make class a resource so that it can be link later-->
     <Window.Resources>
         <local:AppStructureViewModel x:Key="AppStructureViewModel"/>
     </Window.Resources>
@@ -21,14 +22,17 @@
             </Grid.RowDefinitions>
 
             <!-- Top Panel-->
+            <!--LastChild will fill the rest of the space-->
             <DockPanel Grid.Row="0" LastChildFill="True">
                 <!--Logo-->
                 <Image Name="Logo" DockPanel.Dock="Left">
                     <Image.Source>
+                        <!--Use BitmapImage instead of image so that we can scale image-->
                         <BitmapImage UriSource="pack://application:,,,/Data/Icon/Logo.png"/>
                     </Image.Source>
                 </Image>
                 <TextBlock Text="Birdstufz" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="2 2 2 2" DockPanel.Dock="Right" FontSize="30"/>
+                <!-- Viewbox is used so that the component scale with windows size-->
                 <Viewbox>
                     <TextBlock Text="GameMaster" FontWeight="ExtraBold" VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="2 2 2 2" FontSize="30"/>
                 </Viewbox>
@@ -36,6 +40,7 @@
             
             <!--Middle Panel-->
             <Border BorderThickness="5" Padding="10" BorderBrush="Black" Grid.Row="1">
+                <!--ItemControl is used to we can bind componenet to list of data-->
                 <ItemsControl ItemsSource="{Binding GameList}">
                     <!--Layout of the Item Control-->
                     <ItemsControl.ItemsPanel>
@@ -46,6 +51,9 @@
                     <!--Item in the Item Control-->
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
+                            <!--Name: Attibutes from GameList-->
+                            <!--Command: The command methods from ViewModel-->
+                            <!--CommandParameter: The parameter needs to pass into Command method-->
                             <Button Content="{Binding Name}" Command="{Binding ClickCommand,  Source={StaticResource AppStructureViewModel}}" CommandParameter="{Binding FullPath}" Margin="10 10 10 10" Width="150" Height="150"/>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
@@ -64,6 +72,7 @@
                         <BitmapImage UriSource="pack://application:,,,/Data/Icon/Logo.png"/>
                     </Image.Source>
                 </Image>
+                <!--Last item in DockPanel will always be added to the center-->
                 <Canvas></Canvas>
             </DockPanel>
         </Grid>
