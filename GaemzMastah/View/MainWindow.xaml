@@ -9,6 +9,8 @@
 
     <!--Make class a resource so that it can be link later-->
     <Window.Resources>
+        <!--Don't worry about this error. It doesn't do anything. 
+        Problem is caused by relative path.-->
         <local:AppStructureViewModel x:Key="AppStructureViewModel"/>
     </Window.Resources>
         <!-- The border around the object-->
