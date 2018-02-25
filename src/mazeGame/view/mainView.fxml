@@ -1,0 +1,14 @@
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.*?>
+<?import mazeGame.view.ResizableCanvas?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+ fx:controller="mazeGame.controller.Controller">
+	 
+	<StackPane fx:id="holder">
+		<ResizableCanvas fx:id="maze" width="${holder.prefWidth}" height="${holder.prefHeight}"/>
+	</StackPane>
+</GridPane>
