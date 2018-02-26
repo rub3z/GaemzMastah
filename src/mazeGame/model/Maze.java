@@ -107,28 +107,28 @@ public class Maze {
 		case 1:
 			start = maze[0][rnd.nextInt(column)];
 			start.setSide(false, Direction.North);
-			end = maze[row - 1][(int) (start.getY())];
+			end = maze[row - 1][(int) (start.getX())];
 			end.setSide(false, Direction.South);
 			break;
 		// West
 		case 2:
 			start = maze[rnd.nextInt(row)][0];
 			start.setSide(false, Direction.West);
-			end = maze[(int) (start.getX())][column - 1];
+			end = maze[(int) (start.getY())][column - 1];
 			end.setSide(false, Direction.East);
 			break;
 		// East
 		case 3:
 			start = maze[rnd.nextInt(row)][column - 1];
 			start.setSide(false, Direction.East);
-			end = maze[(int) (start.getX())][0];
+			end = maze[(int) (start.getY())][0];
 			end.setSide(false, Direction.West);
 			break;
 		// South
 		default:
 			start = maze[row - 1][rnd.nextInt(column)];
 			start.setSide(false, Direction.South);
-			end = maze[0][(int) (start.getY())];
+			end = maze[0][(int) (start.getX())];
 			end.setSide(false, Direction.North);
 			break;
 		}
@@ -146,8 +146,8 @@ public class Maze {
 
 	public boolean movePlayer(Player p, Direction d) {
 		System.out.println(d);
-		boolean canMove = !maze[p.getX()][p.getY()].getSide(d);
-		System.out.println(maze[p.getX()][p.getY()]);
+		boolean canMove = !maze[p.getY()][p.getX()].getSide(d);
+		System.out.println(maze[p.getY()][p.getX()]);
 		if (canMove == false) {
 			return false;
 		} else {
