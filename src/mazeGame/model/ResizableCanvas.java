@@ -1,4 +1,4 @@
-package mazeGame.view;
+package mazeGame.model;
 
 import javafx.scene.canvas.Canvas;
 
