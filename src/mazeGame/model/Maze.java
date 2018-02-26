@@ -6,7 +6,6 @@ public class Maze {
 	private int column, row;
 	private Cell[][] maze;
 	private Random rnd;
-	private Player p;
 	private Cell start, end;
 
 	public Maze() {
@@ -146,8 +145,9 @@ public class Maze {
 	}
 
 	public boolean movePlayer(Player p, Direction d) {
-		boolean canMove = maze[p.getX()][p.getY()].getSide(d);
-		System.out.println("North: "+maze[p.getX()][p.getY()].getSide(Direction.North)+" South: "+maze[p.getX()][p.getY()].getSide(Direction.South)+" East: "+maze[p.getX()][p.getY()].getSide(Direction.East)+" West: "+maze[p.getX()][p.getY()].getSide(Direction.West));
+		System.out.println(d);
+		boolean canMove = !maze[p.getX()][p.getY()].getSide(d);
+		System.out.println(maze[p.getX()][p.getY()]);
 		if (canMove == false) {
 			return false;
 		} else {
