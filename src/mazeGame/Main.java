@@ -25,31 +25,27 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/mainView.fxml"));
 		Parent root = (Parent) loader.load();
-		Controller controller=loader.getController();
+		Controller controller = loader.getController();
+		Scene scene = new Scene(root, 800, 600);
 		primaryStage.setTitle("Maze Game");
-		primaryStage.setScene(new Scene(root, 800, 600));
+		primaryStage.setScene(scene);
 		primaryStage.show();
 		primaryStage.getScene().setOnKeyPressed(new EventHandler<KeyEvent>() {
 			@Override
 			public void handle(KeyEvent keyEvent) {
 
-				boolean canMove = false;
 				switch (keyEvent.getCode()) {
 				case UP:
-					System.out.println(keyEvent.getCode());
-					canMove = controller.move(Direction.North);
+					controller.move(Direction.North);
 					break;
 				case DOWN:
-					System.out.println(keyEvent.getCode());
-					canMove = controller.move(Direction.South);
+					controller.move(Direction.South);
 					break;
 				case LEFT:
-					System.out.println(keyEvent.getCode());
-					canMove = controller.move(Direction.West);
+					controller.move(Direction.West);
 					break;
 				case RIGHT:
-					System.out.println(keyEvent.getCode());
-					canMove = controller.move(Direction.East);
+					controller.move(Direction.East);
 					break;
 				default:
 					break;

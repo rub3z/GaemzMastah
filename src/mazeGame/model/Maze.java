@@ -28,7 +28,7 @@ public class Maze {
 	}
 
 	public Cell[][] getMaze() {
-		
+
 		for (int i = 0; i < column; i++) {
 			for (int j = 0; j < row; j++) {
 				maze[j][i] = new Cell(i, j, false, false, false, false);
@@ -46,7 +46,7 @@ public class Maze {
 				}
 			}
 		}
-		//generateMaze(0, 0, column - 1, row - 1);
+		generateMaze(0, 0, column - 1, row - 1);
 		printMaze();
 		initializeStartEnd();
 		return maze;
@@ -60,12 +60,9 @@ public class Maze {
 				int middle = ((y2 - y1) / 2) + y1;
 				for (int i = x1; i <= x2; i++) {
 					maze[middle][i].setSide(true, Direction.South);
-					if (i < x2) {
-						maze[middle + 1][i].setSide(true, Direction.North);
-					}
+					maze[middle + 1][i].setSide(true, Direction.North);
 
 				}
-				System.out.println((int) (x2 - x1 / 2) + x1);
 				int gate = rnd.nextInt(x2 - x1 + 1) + x1;
 
 				maze[middle][gate].setSide(false, Direction.South);
@@ -79,14 +76,10 @@ public class Maze {
 		if (value == 1) {
 			if (x1 < x2) {
 				int middle = ((x2 - x1) / 2) + x1;
-				// System.out.println(x2+" "+x1+" "+middle);
 				for (int i = y1; i <= y2; i++) {
 					maze[i][middle].setSide(true, Direction.East);
-					if (i < y2) {
-						maze[i][middle + 1].setSide(true, Direction.West);
-					}
+					maze[i][middle + 1].setSide(true, Direction.West);
 				}
-				System.out.println((int) (y2 - y1 / 2) + y1);
 				int gate = rnd.nextInt(y2 - y1 + 1) + y1;
 
 				maze[gate][middle].setSide(false, Direction.East);
@@ -106,30 +99,22 @@ public class Maze {
 		// North
 		case 1:
 			start = maze[0][rnd.nextInt(column)];
-			start.setSide(false, Direction.North);
-			end = maze[row - 1][(int) (start.getX())];
-			end.setSide(false, Direction.South);
+			end = maze[row - 1][rnd.nextInt(column)];
 			break;
 		// West
 		case 2:
 			start = maze[rnd.nextInt(row)][0];
-			start.setSide(false, Direction.West);
-			end = maze[(int) (start.getY())][column - 1];
-			end.setSide(false, Direction.East);
+			end = maze[rnd.nextInt(row)][column - 1];
 			break;
 		// East
 		case 3:
 			start = maze[rnd.nextInt(row)][column - 1];
-			start.setSide(false, Direction.East);
-			end = maze[(int) (start.getY())][0];
-			end.setSide(false, Direction.West);
+			end = maze[rnd.nextInt(row)][0];
 			break;
 		// South
 		default:
 			start = maze[row - 1][rnd.nextInt(column)];
-			start.setSide(false, Direction.South);
-			end = maze[0][(int) (start.getX())];
-			end.setSide(false, Direction.North);
+			end = maze[0][rnd.nextInt(column)];
 			break;
 		}
 	}
@@ -145,9 +130,7 @@ public class Maze {
 	}
 
 	public boolean movePlayer(Player p, Direction d) {
-		System.out.println(d);
 		boolean canMove = !maze[p.getY()][p.getX()].getSide(d);
-		System.out.println(maze[p.getY()][p.getX()]);
 		if (canMove == false) {
 			return false;
 		} else {
@@ -169,6 +152,7 @@ public class Maze {
 		}
 
 	}
+
 	public void printMaze() {
 		for (int i = 0; i < column; i++) {
 			for (int j = 0; j < row; j++) {

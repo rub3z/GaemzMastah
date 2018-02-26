@@ -3,12 +3,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
 <?import mazeGame.model.ResizableCanvas?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
  fx:controller="mazeGame.controller.Controller">
-	 
 	<StackPane fx:id="holder">
 		<ResizableCanvas fx:id="mazeDrawable" width="${holder.prefWidth}" height="${holder.prefHeight}"/>
+		<ResizableCanvas fx:id="playerDrawable" width="${holder.prefWidth}" height="${holder.prefHeight}"/>
 	</StackPane>
 </GridPane>
