@@ -15,9 +15,9 @@ import mazeGame.model.ResizableCanvas;
 
 public class Controller implements Initializable{
 	@FXML
-	private ResizableCanvas mazeDrawable;
+	private Canvas mazeDrawable;
 	@FXML
-	private ResizableCanvas playerDrawable;
+	private Canvas playerDrawable;
 	@FXML
 	private StackPane holder;
 	private GraphicsContext gcMazeDrawable;
