@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+            fx:controller="launcher.controller.GameListController" id="scrollPane">
+    <stylesheets>
+        <URL value="@/launcher/view/styleSheets/GameList.css"/>
+    </stylesheets>
+    <content>
+        <FlowPane id="flowPane" fx:id="gameList">
 
-<FlowPane fx:id="GameList" alignment="CENTER" hgap="100.0" rowValignment="TOP" vgap="100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="launcher.controller.GameListController">
-   <children>
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button mnemonicParsing="false" text="Button" />
-   </children>
-</FlowPane>
+            <children>
+
+            </children>
+        </FlowPane>
+    </content>
+</ScrollPane>

@@ -1,0 +1,12 @@
+#bottomLogo {
+    -fx-background-color: #0b0c10;
+}
+
+.label {
+    -fx-text-fill: #66FCF1;
+    -fx-font-family: "Sabo";
+}
+
+#bottomLogo {
+    -fx-font-size: 25;
+}

@@ -1,0 +1,29 @@
+.button {
+    -fx-pref-width: 200;
+    -fx-pref-height: 210;
+    -fx-background-size: 200 180;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: top;
+    -fx-alignment: bottom-center;
+    -fx-background-color: transparent;
+    -fx-text-fill: #c5c6c7;
+    -fx-background-radius: 25 25 25 25;
+}
+
+.button:hover {
+    -fx-background-color: #1f2833;
+}
+
+#flowPane {
+    -fx-background-color: #0b0c10;
+    -fx-alignment: top-left;
+    -fx-hgap: 25;
+    -fx-vgap: 25;
+}
+
+#scrollPane {
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+    -fx-pannable: true;
+    -fx-background-color: #0b0c10;
+}

@@ -1,0 +1,16 @@
+.label {
+    -fx-text-fill: #66FCF1;
+    -fx-font-family: "Sabo";
+}
+
+#topLogo {
+    -fx-background-color: #0b0c10;
+}
+
+#companyName {
+    -fx-font-size: 50;
+}
+
+#launcherName {
+    -fx-font-size: 100;
+}
