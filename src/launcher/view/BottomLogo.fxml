@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import java.net.URL?>
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" id="bottomLogo" fx:id="bottomLogo" xmlns="http://javafx.com/javafx/8"
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" id="bottomLogo" xmlns="http://javafx.com/javafx/8"
             fx:controller="launcher.controller.BottomLogoController">
     <stylesheets>
         <URL value="@/launcher/view/styleSheets/BottomLogo.css"/>

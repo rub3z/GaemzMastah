@@ -1,0 +1,13 @@
+#TopUI {
+    -fx-background-color: #0B0C10;
+
+}
+
+.label {
+    -fx-text-fill: #66fcf1;
+
+    -fx-font-family: "Sabo";
+}
+#gameName{
+    -fx-font-size: 100;
+}

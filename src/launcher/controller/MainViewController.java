@@ -21,7 +21,7 @@ public class MainViewController {
 
     @FXML
     public void initialize() {
-        gameListController.initializeParentController(this);
+        gameListController.setMainViewController(this);
         gameListController.addAppsToView(new ArrayList<Program>(programManager.getAppList()));
     }
 }

@@ -1,29 +1,33 @@
-package launcher.controller;
+package mazeGame;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import launcher.model.ProgramManager;
+import mazeGame.controller.MainViewController;
 
-public class Main extends Application {
+public class mazeGame extends Application {
 
     public static void main(String[] args) {
-        new ProgramManager("src/launcher/resources/Database.xml").readDataFromFile();
+
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/launcher/view/MainView.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/mazeGame/view/MainView.fxml"));
+            Parent root = fxmlLoader.load();
+            MainViewController mainViewController = fxmlLoader.getController();
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.setMaximized(true);
             primaryStage.show();
+            mainViewController.addKeyboardControl(primaryStage.getScene());
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }

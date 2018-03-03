@@ -1,14 +1,20 @@
-
-
 <?import javafx.scene.layout.*?>
-
-<?import mazeGame.model.ResizableCanvas?>
-
-<?import javafx.scene.canvas.Canvas?>
+<?import java.net.URL?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
-          fx:controller="mazeGame.controller.Controller">
-	<StackPane fx:id="holder">
-		<Canvas fx:id="mazeDrawable" width="${holder.prefWidth}" height="${holder.prefHeight}"/>
-		<Canvas fx:id="playerDrawable" width="${holder.prefWidth}" height="${holder.prefHeight}"/>
-	</StackPane>
+          fx:controller="mazeGame.controller.MainViewController">
+    <stylesheets>
+        <URL value="@/mazeGame/view/styleSheets/MainView.css"/>
+    </stylesheets>
+    <children>
+        <fx:include fx:id="topUI" source="/mazeGame/view/TopUI.fxml" GridPane.rowIndex="0"/>
+        <fx:include fx:id="gameWindow" source="/mazeGame/view/GameWindow.fxml" GridPane.rowIndex="1"/>
+    </children>
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="90"/>
+        <RowConstraints vgrow="ALWAYS"/>
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
 </GridPane>

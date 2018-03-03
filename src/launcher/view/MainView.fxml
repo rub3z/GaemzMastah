@@ -11,9 +11,9 @@
         <URL value="@/launcher/view/styleSheets/MainView.css"/>
     </stylesheets>
     <children>
-        <fx:include fx:id="topLogo" source="/launcher/view/TopLogo.fxml" GridPane.rowIndex="0"/>
+        <fx:include source="/launcher/view/TopLogo.fxml" GridPane.rowIndex="0"/>
         <fx:include fx:id="gameList" source="/launcher/view/GameList.fxml" GridPane.rowIndex="1"/>
-        <fx:include fx:id="bottomLogo" source="/launcher/view/BottomLogo.fxml" GridPane.rowIndex="2"/>
+        <fx:include source="/launcher/view/BottomLogo.fxml" GridPane.rowIndex="2"/>
     </children>
     <rowConstraints>
         <RowConstraints percentHeight="20"/>

@@ -13,7 +13,7 @@ public class GameListController {
     @FXML
     private FlowPane gameList;
 
-    public void initializeParentController(MainViewController mainViewController) {
+    public void setMainViewController(MainViewController mainViewController) {
         parentController = mainViewController;
     }
 

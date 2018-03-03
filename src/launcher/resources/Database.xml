@@ -4,4 +4,36 @@
         <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
         <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
     </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
+    <application id="Internet Explorer">
+        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
+        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
+    </application>
 </applications>
