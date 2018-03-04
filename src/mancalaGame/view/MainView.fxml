@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import java.net.URL?>
+<GridPane prefHeight="400.0"  stylesheets="@/mancalaGame/view/styleSheets/MainView.css" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mancalaGame.controller.MainViewController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="10.0" vgrow="ALWAYS"/>
+      <RowConstraints percentHeight="90.0" vgrow="ALWAYS"/>
+   </rowConstraints>
+   <children>
+       <fx:include source="/mancalaGame/view/UI.fxml" fx:id="ui" GridPane.rowIndex="0"/>
+      <fx:include source="/mancalaGame/view/GameView.fxml" fx:id="gameView" GridPane.rowIndex="1"/>
+   </children>
+</GridPane>

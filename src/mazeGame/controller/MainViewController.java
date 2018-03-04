@@ -13,9 +13,9 @@ import mazeGame.model.Player;
 
 public class MainViewController {
     @FXML
-    GameWindowController gameWindowController;
+    GameViewController gameViewController;
     @FXML
-    TopUIController topUIController;
+    UIController uiController;
 
     private Maze maze;
     private Cell[][] mazeMap;
@@ -28,23 +28,23 @@ public class MainViewController {
 
     @FXML
     public void initialize() {
-        gameWindowController.setMainViewController(this);
-        topUIController.setMainViewController(this);
+        gameViewController.setMainViewController(this);
+        uiController.setMainViewController(this);
         startNewGame();
     }
 
     public void startNewGame() {
         mazeMap = maze.getMaze();
         player = new Player((int) maze.getStart().getX(), (int) maze.getStart().getY());
-        gameWindowController.drawMap(mazeMap, new Point2D(maze.getStart().getX(), maze.getStart().getY()), new Point2D(maze.getEnd().getX(), maze.getEnd().getY()));
-        gameWindowController.drawPlayer(new Point2D(player.getX(), player.getY()));
+        gameViewController.drawMap(mazeMap, new Point2D(maze.getStart().getX(), maze.getStart().getY()), new Point2D(maze.getEnd().getX(), maze.getEnd().getY()));
+        gameViewController.drawPlayer(new Point2D(player.getX(), player.getY()));
 
     }
 
     public boolean move(Direction d) {
         boolean result = maze.movePlayer(player, d);
         if (result == true) {
-            gameWindowController.drawPlayer(new Point2D(player.getX(), player.getY()));
+            gameViewController.drawPlayer(new Point2D(player.getX(), player.getY()));
         }
         return result;
 

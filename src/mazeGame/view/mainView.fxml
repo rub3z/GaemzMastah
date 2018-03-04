@@ -6,8 +6,8 @@
         <URL value="@/mazeGame/view/styleSheets/MainView.css"/>
     </stylesheets>
     <children>
-        <fx:include fx:id="topUI" source="/mazeGame/view/TopUI.fxml" GridPane.rowIndex="0"/>
-        <fx:include fx:id="gameWindow" source="/mazeGame/view/GameWindow.fxml" GridPane.rowIndex="1"/>
+        <fx:include fx:id="ui" source="/mazeGame/view/UI.fxml" GridPane.rowIndex="0"/>
+        <fx:include fx:id="gameView" source="/mazeGame/view/GameView.fxml" GridPane.rowIndex="1"/>
     </children>
     <rowConstraints>
         <RowConstraints percentHeight="10"/>
