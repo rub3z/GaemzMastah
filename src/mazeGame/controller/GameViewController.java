@@ -35,8 +35,8 @@ public class GameViewController {
         gcMazeDrawable.setLineWidth(5);
         gcPlayerDrawable.setFill(Color.web("#66fcf1"));
         gcPlayerDrawable.setLineWidth(10);
-        //gcFogDrawable.setFill(Color.web("#0b0c10"));
-        //gcFogDrawable.fillRect(0, 0, fogDrawable.getWidth(), fogDrawable.getHeight());
+        gcFogDrawable.setFill(Color.web("#0b0c10"));
+        gcFogDrawable.fillRect(0, 0, fogDrawable.getWidth(), fogDrawable.getHeight());
     }
 
     public void setMainViewController(MainViewController mainViewController) {
