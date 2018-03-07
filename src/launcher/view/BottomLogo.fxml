@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import java.net.URL?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" id="bottomLogo" xmlns="http://javafx.com/javafx/8"
+            fx:controller="launcher.controller.BottomLogoController">
+    <stylesheets>
+        <URL value="@/launcher/view/styleSheets/BottomLogo.css"/>
+    </stylesheets>
+    <right>
+        <Label id="companyLogo" text="Birdstufz" BorderPane.alignment="CENTER_RIGHT"/>
+
+    </right>
+    <left>
+        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true"
+                   BorderPane.alignment="CENTER_LEFT">
+            <image>
+                <Image url="@../resources/Logo.png"/>
+            </image>
+            <BorderPane.margin>
+                <Insets right="500.0"/>
+            </BorderPane.margin>
+        </ImageView>
+    </left>
+</BorderPane>

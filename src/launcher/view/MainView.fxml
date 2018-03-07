@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet fruitcombo.css?>
+
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          xmlns="http://javafx.com/javafx"
+          fx:controller="launcher.controller.MainViewController">
+    <stylesheets>
+        <URL value="@/launcher/view/styleSheets/MainView.css"/>
+    </stylesheets>
+    <children>
+        <fx:include source="/launcher/view/TopLogo.fxml" GridPane.rowIndex="0"/>
+        <fx:include fx:id="gameList" source="/launcher/view/GameList.fxml" GridPane.rowIndex="1"/>
+        <fx:include source="/launcher/view/BottomLogo.fxml" GridPane.rowIndex="2"/>
+    </children>
+    <rowConstraints>
+        <RowConstraints percentHeight="20"/>
+        <RowConstraints percentHeight="75"/>
+        <RowConstraints percentHeight="5"/>
+        <RowConstraints vgrow="ALWAYS"/>
+
+    </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS"/>
+    </columnConstraints>
+
+</GridPane>
