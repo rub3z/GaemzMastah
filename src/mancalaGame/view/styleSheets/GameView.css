@@ -1,31 +1,36 @@
-.label{
+.label {
     -fx-text-fill: #66FCF1;
     -fx-border-color: #66FCF1;
     -fx-border-width: 1;
     -fx-font-family: Sabo;
     -fx-font-size: 50;
 }
-.button{
+
+.button {
     -fx-text-fill: #66FCF1;
     -fx-background-color: #1f2833;
     -fx-font-family: Sabo;
 
 }
 
-#gameView{
+#gameView {
     -fx-background-color: #0B0C10;
 }
-.enemySmallPot{
-    -fx-background-radius:100;
+
+.enemySmallPot {
+    -fx-background-radius: 100;
 }
-.smallPot{
-    -fx-background-radius:100;
+
+.smallPot {
+    -fx-background-radius: 100;
 
 }
+
 .largePot {
     -fx-background-radius: 100;
 }
-.smallPot:hover{
+
+.smallPot:hover {
     -fx-background-color: #c5c6c7;
 
 }

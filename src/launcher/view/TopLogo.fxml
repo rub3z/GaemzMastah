@@ -8,21 +8,21 @@
 <?import java.net.URL?>
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
             fx:controller="launcher.controller.TopLogoController" id="topLogo">
-    <stylesheets>
-        <URL value="@/launcher/view/styleSheets/TopLogo.css"/>
-    </stylesheets>
-    <center>
-        <Label id="launcherName" text="GameMaster" BorderPane.alignment="CENTER"/>
-    </center>
-    <right>
-        <Label id="companyName" text="Birdstufz" BorderPane.alignment="CENTER_RIGHT"/>
-    </right>
-    <left>
-        <ImageView fitHeight="160.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true"
-                   BorderPane.alignment="CENTER_LEFT">
-            <image>
-                <Image url="@../resources/Logo.png"/>
-            </image>
-        </ImageView>
-    </left>
+   <stylesheets>
+      <URL value="@/launcher/view/styleSheets/TopLogo.css"/>
+   </stylesheets>
+   <center>
+      <Label id="launcherName" text="GameMaster" BorderPane.alignment="CENTER"/>
+   </center>
+   <right>
+      <Label id="companyName" text="Birdstufz" BorderPane.alignment="CENTER_RIGHT"/>
+   </right>
+   <left>
+      <ImageView fitHeight="160.0" fitWidth="275.0" pickOnBounds="true" preserveRatio="true"
+                 BorderPane.alignment="CENTER_LEFT">
+         <image>
+            <Image url="@../resources/Logo.png"/>
+         </image>
+      </ImageView>
+   </left>
 </BorderPane>

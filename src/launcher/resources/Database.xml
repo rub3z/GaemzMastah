@@ -1,39 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <applications>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
-    <application id="Internet Explorer">
-        <path>C:\Program Files\Internet Explorer\iexplore.exe</path>
-        <iconPath>/launcher/resources/InternetExplorerLogo.png</iconPath>
-    </application>
+   <application id="Maze">
+      <path>mazeGame.Maze</path>
+      <iconPath>/launcher/resources/MazeGameIcon.png</iconPath>
+   </application>
+   <application id="Mancala">
+      <path>mancalaGame.Mancala</path>
+      <iconPath>/launcher/resources/MancalaIcon.png</iconPath>
+   </application>
+
 </applications>
