@@ -15,7 +15,7 @@ public class chessGame extends Application {
    @Override
    public void start(Stage primaryStage) {
       try {
-         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FullChessGame/view/MainView.fxml"));
+         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/chessGame/view/MainView.fxml"));
          Parent root = fxmlLoader.load();
          MainViewController controller = fxmlLoader.getController();
          Scene scene = new Scene(root);

@@ -2,7 +2,7 @@
 
 <?import javafx.scene.layout.*?>
 <StackPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8"
-           fx:controller="FullChessGame.controller.GameViewController">
+           fx:controller="chessGame.controller.GameViewController">
    <children>
       <GridPane fx:id="gridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
                 minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="background"

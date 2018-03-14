@@ -1,5 +1,7 @@
-package FullChessGame.model;
+package chessGame.model;
 
+import chessGame.model.ChessPieceType;
+import chessGame.model.GenericChessPiece;
 import javafx.geometry.Point2D;
 
 import java.util.ArrayList;

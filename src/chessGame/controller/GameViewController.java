@@ -1,6 +1,7 @@
-package FullChessGame.controller;
+package chessGame.controller;
 
-import FullChessGame.model.ChessPieceType;
+import chessGame.controller.MainViewController;
+import chessGame.model.ChessPieceType;
 import javafx.animation.TranslateTransition;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -69,7 +70,7 @@ public class GameViewController implements Initializable {
       //Pawn
       ImageView imageView;
       for (int i = 0; i < board[0].length; i++) {
-         imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Pawn.png"));
+         imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Pawn.png"));
          imageView.fitHeightProperty().bind(a.heightProperty());
          imageView.fitWidthProperty().bind(a.widthProperty());
          imageView.setId("Piece0");
@@ -81,7 +82,7 @@ public class GameViewController implements Initializable {
 
       //Rook
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Rook.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Rook.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -90,7 +91,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 0, 0);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Rook.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Rook.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -100,7 +101,7 @@ public class GameViewController implements Initializable {
       move(size / 2, size / 2, size - 1, 0);
 
       //Knight
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Knight.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Knight.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -109,7 +110,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 1, 0);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Knight.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Knight.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -119,7 +120,7 @@ public class GameViewController implements Initializable {
       move(size / 2, size / 2, size - 2, 0);
 
       //Bishop
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Bishop.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Bishop.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -128,7 +129,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 2, 0);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/B_Bishop.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/B_Bishop.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece0");
@@ -141,7 +142,7 @@ public class GameViewController implements Initializable {
       //White Piece
       //Pawn
       for (int i = 0; i < board[0].length; i++) {
-         imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Pawn.png"));
+         imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Pawn.png"));
          imageView.fitHeightProperty().bind(a.heightProperty());
          imageView.fitWidthProperty().bind(a.widthProperty());
          imageView.setId("Piece1");
@@ -153,7 +154,7 @@ public class GameViewController implements Initializable {
 
       //Rook
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Rook.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Rook.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");
@@ -162,7 +163,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 0, size - 1);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Rook.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Rook.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");
@@ -172,7 +173,7 @@ public class GameViewController implements Initializable {
       move(size / 2, size / 2, size - 1, size - 1);
 
       //Knight
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Knight.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Knight.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");
@@ -181,7 +182,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 1, size - 1);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Knight.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Knight.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");
@@ -191,7 +192,7 @@ public class GameViewController implements Initializable {
       move(size / 2, size / 2, size - 2, size - 1);
 
       //Bishop
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Bishop.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Bishop.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");
@@ -200,7 +201,7 @@ public class GameViewController implements Initializable {
       pieces[size / 2][size / 2] = imageView;
       move(size / 2, size / 2, 2, size - 1);
 
-      imageView = new ImageView(new Image("FullChessGame/resources/chessPieces/W_Bishop.png"));
+      imageView = new ImageView(new Image("chessGame/resources/chessPieces/W_Bishop.png"));
       imageView.fitHeightProperty().bind(a.heightProperty());
       imageView.fitWidthProperty().bind(a.widthProperty());
       imageView.setId("Piece1");

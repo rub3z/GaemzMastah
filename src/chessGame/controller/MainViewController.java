@@ -1,7 +1,8 @@
-package FullChessGame.controller;
+package chessGame.controller;
 
-import FullChessGame.model.ChessManager;
-import FullChessGame.model.ChessPieceType;
+import chessGame.controller.GameViewController;
+import chessGame.model.ChessManager;
+import chessGame.model.ChessPieceType;
 import javafx.animation.PauseTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

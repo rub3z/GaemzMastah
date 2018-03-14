@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
           prefHeight="400.0" prefWidth="600.0" stylesheets="@styleSheets/MainView.css"
-          xmlns="http://javafx.com/javafx/8" fx:controller="FullChessGame.controller.MainViewController"
+          xmlns="http://javafx.com/javafx/8" fx:controller="chessGame.controller.MainViewController"
           styleClass="background">
    <columnConstraints>
       <ColumnConstraints minWidth="10.0" percentWidth="10.0" prefWidth="100.0"/>
@@ -53,7 +53,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
          <children>
-            <fx:include source="/FullChessGame/view/GameView.fxml" fx:id="gameView" AnchorPane.bottomAnchor="0.0"
+            <fx:include source="/chessGame/view/GameView.fxml" fx:id="gameView" AnchorPane.bottomAnchor="0.0"
                         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
          </children>
       </AnchorPane>
