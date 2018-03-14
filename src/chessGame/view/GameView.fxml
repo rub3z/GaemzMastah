@@ -5,7 +5,7 @@
            fx:controller="chessGame.controller.GameViewController">
    <children>
       <GridPane fx:id="gridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="background"
+                minWidth="-Infinity" prefHeight="500" prefWidth="500" styleClass="background"
                 stylesheets="@styleSheets/GameView.css">
          <columnConstraints>
             <ColumnConstraints/>
