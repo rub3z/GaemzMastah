@@ -33,30 +33,46 @@ public class Rook extends GenericChessPiece {
       ArrayList<Point2D> list = new ArrayList<>();
       int i = 1;
       //North
-      while (getCurrentPosition().getY() - i >= 0 &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() - i)) {
-         list.add(new Point2D(getCurrentPosition().getX(), getCurrentPosition().getY() - i));
+      while 
+       (getCurrentPosition().getY() - i >= 0 &&
+        !getManager().isThereAPieceAt((int) getCurrentPosition().getX(),
+                                      (int) getCurrentPosition().getY() - i)
+        && i <= 2 ) {
+         list.add(new Point2D(getCurrentPosition().getX(), 
+                              getCurrentPosition().getY() - i));
          i++;
       }
       //South
       i = 1;
-      while (getCurrentPosition().getY() + i < size &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() + i)) {
-         list.add(new Point2D(getCurrentPosition().getX(), getCurrentPosition().getY() + i));
+      while 
+       (getCurrentPosition().getY() + i < size &&
+        !getManager().isThereAPieceAt((int) getCurrentPosition().getX(), 
+                                      (int) getCurrentPosition().getY() + i)
+        && i <= 2) {
+         list.add(new Point2D(getCurrentPosition().getX(), 
+                              getCurrentPosition().getY() + i));
          i++;
       }
       //West
       i = 1;
-      while (getCurrentPosition().getX() - i >= 0 &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY())) {
-         list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY()));
+      while 
+       (getCurrentPosition().getX() - i >= 0 &&
+        !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, 
+                                      (int) getCurrentPosition().getY())
+         && i <= 2) {
+         list.add(new Point2D(getCurrentPosition().getX() - i, 
+                              getCurrentPosition().getY()));
          i++;
       }
       //East
       i = 1;
-      while (getCurrentPosition().getX() + i < size &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY())) {
-         list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY()));
+      while 
+       (getCurrentPosition().getX() + i < size &&
+        !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, 
+                                      (int) getCurrentPosition().getY())
+        && i <= 2) {
+         list.add(new Point2D(getCurrentPosition().getX() + i, 
+                              getCurrentPosition().getY()));
          i++;
       }
       return list;
@@ -67,10 +83,18 @@ public class Rook extends GenericChessPiece {
       ArrayList<Point2D> list = new ArrayList<>();
       int i = 1;
       //North
-      while (getCurrentPosition().getY() - i >= 0) {
-         if (getManager().isThereAPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() - i)) {
-            if (getManager().getPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() - i).getOwner() != getOwner()) {
-               list.add(new Point2D(getCurrentPosition().getX(), getCurrentPosition().getY() - i));
+      while 
+       (getCurrentPosition().getY() - i >= 0 ) {
+         if (getManager()
+              .isThereAPieceAt((int) getCurrentPosition().getX(), 
+                               (int) getCurrentPosition().getY() - i)
+              && i <= 2 ) {
+            if (getManager()
+                .getPieceAt((int) getCurrentPosition().getX(), 
+                            (int) getCurrentPosition().getY() - i)
+                .getOwner() != getOwner()) {
+               list.add(new Point2D(getCurrentPosition().getX(), 
+                                    getCurrentPosition().getY() - i));
             }
             break;
          }
@@ -79,9 +103,16 @@ public class Rook extends GenericChessPiece {
       //South
       i = 1;
       while (getCurrentPosition().getY() + i < size) {
-         if (getManager().isThereAPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() + i)) {
-            if (getManager().getPieceAt((int) getCurrentPosition().getX(), (int) getCurrentPosition().getY() + i).getOwner() != getOwner()) {
-               list.add(new Point2D(getCurrentPosition().getX(), getCurrentPosition().getY() + i));
+         if (getManager()
+              .isThereAPieceAt((int) getCurrentPosition().getX(), 
+                               (int) getCurrentPosition().getY() + i)
+              && i <= 2) {
+            if (getManager()
+                 .getPieceAt((int) getCurrentPosition().getX(), 
+                             (int) getCurrentPosition().getY() + i)
+                 .getOwner() != getOwner()) {
+               list.add(new Point2D(getCurrentPosition().getX(), 
+                                    getCurrentPosition().getY() + i));
             }
             break;
          }
@@ -90,9 +121,16 @@ public class Rook extends GenericChessPiece {
       //West
       i = 1;
       while (getCurrentPosition().getX() - i >= 0) {
-         if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY())) {
-            if (getManager().getPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY()).getOwner() != getOwner()) {
-               list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY()));
+         if (getManager()
+              .isThereAPieceAt((int) getCurrentPosition().getX() - i, 
+                               (int) getCurrentPosition().getY())
+              && i <= 2) {
+            if (getManager()
+                 .getPieceAt((int) getCurrentPosition().getX() - i, 
+                             (int) getCurrentPosition().getY())
+                 .getOwner() != getOwner()) {
+               list.add(new Point2D(getCurrentPosition().getX() - i, 
+                                    getCurrentPosition().getY()));
             }
             break;
          }
@@ -101,9 +139,16 @@ public class Rook extends GenericChessPiece {
       //East
       i = 1;
       while (getCurrentPosition().getX() + i < size) {
-         if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY())) {
-            if (getManager().getPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY()).getOwner() != getOwner()) {
-               list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY()));
+         if (getManager()
+              .isThereAPieceAt((int) getCurrentPosition().getX() + i, 
+                               (int) getCurrentPosition().getY())
+              && i <= 2 ) {
+            if (getManager()
+                 .getPieceAt((int) getCurrentPosition().getX() + i, 
+                             (int) getCurrentPosition().getY())
+                 .getOwner() != getOwner()) {
+               list.add(new Point2D(getCurrentPosition().getX() + i, 
+                                    getCurrentPosition().getY()));
             }
             break;
          }
