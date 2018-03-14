@@ -1,6 +1,5 @@
 package chessGame.controller;
 
-import chessGame.controller.MainViewController;
 import chessGame.model.ChessPieceType;
 import javafx.animation.TranslateTransition;
 import javafx.collections.ObservableList;

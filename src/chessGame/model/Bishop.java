@@ -1,7 +1,5 @@
 package chessGame.model;
 
-import chessGame.model.ChessPieceType;
-import chessGame.model.GenericChessPiece;
 import javafx.geometry.Point2D;
 
 import java.util.ArrayList;
@@ -34,28 +32,28 @@ public class Bishop extends GenericChessPiece {
       //NorthEast
       int i = 1;
       while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() - i >= 0 &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() - i)) {
+              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() - i) && i<=2) {
          list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY() - i));
          i++;
       }
       //NorthWest
       i = 1;
       while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() - i >= 0 &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() - i)) {
+              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() - i) && i<=2) {
          list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY() - i));
          i++;
       }
       //SouthEast
       i = 1;
       while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() + i < size &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() + i)) {
+              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() + i) && i<=2) {
          list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY() + i));
          i++;
       }
       //SouthWest
       i = 1;
       while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() + i < size &&
-              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() + i)) {
+              !getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() + i) && i<=2) {
          list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY() + i));
          i++;
       }
@@ -68,7 +66,7 @@ public class Bishop extends GenericChessPiece {
 
       //NorthEast
       int i = 1;
-      while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() - i >= 0) {
+      while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() - i >= 0 && i<=2) {
          if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() - i)) {
             if (getManager().getPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() - i).getOwner() != getOwner()) {
                list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY() - i));
@@ -79,7 +77,7 @@ public class Bishop extends GenericChessPiece {
       }
       //NorthWest
       i = 1;
-      while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() - i >= 0) {
+      while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() - i >= 0 && i<=2) {
          if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() - i)) {
             if (getManager().getPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() - i).getOwner() != getOwner()) {
                list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY() - i));
@@ -90,7 +88,7 @@ public class Bishop extends GenericChessPiece {
       }
       //SouthEast
       i = 1;
-      while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() + i < size) {
+      while (getCurrentPosition().getX() + i < size && getCurrentPosition().getY() + i < size && i<=2) {
          if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() + i)) {
             if (getManager().getPieceAt((int) getCurrentPosition().getX() + i, (int) getCurrentPosition().getY() + i).getOwner() != getOwner()) {
                list.add(new Point2D(getCurrentPosition().getX() + i, getCurrentPosition().getY() + i));
@@ -101,7 +99,7 @@ public class Bishop extends GenericChessPiece {
       }
       //SouthWest
       i = 1;
-      while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() + i < size) {
+      while (getCurrentPosition().getX() - i >= 0 && getCurrentPosition().getY() + i < size && i<=2) {
          if (getManager().isThereAPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() + i)) {
             if (getManager().getPieceAt((int) getCurrentPosition().getX() - i, (int) getCurrentPosition().getY() + i).getOwner() != getOwner()) {
                list.add(new Point2D(getCurrentPosition().getX() - i, getCurrentPosition().getY() + i));

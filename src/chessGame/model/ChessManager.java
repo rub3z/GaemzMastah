@@ -1,12 +1,5 @@
 package chessGame.model;
 
-import chessGame.model.Bishop;
-import chessGame.model.ChessPieceType;
-import chessGame.model.GenericChessPiece;
-import chessGame.model.Knight;
-import chessGame.model.Pawn;
-import chessGame.model.Queen;
-import chessGame.model.Rook;
 import javafx.geometry.Point2D;
 
 import java.util.ArrayList;

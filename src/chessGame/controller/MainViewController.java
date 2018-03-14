@@ -1,6 +1,5 @@
 package chessGame.controller;
 
-import chessGame.controller.GameViewController;
 import chessGame.model.ChessManager;
 import chessGame.model.ChessPieceType;
 import javafx.animation.PauseTransition;
