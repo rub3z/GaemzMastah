@@ -7,12 +7,12 @@
           xmlns="http://javafx.com/javafx"
           fx:controller="mazeGame.controller.UIController"
           prefHeight="400.0" prefWidth="600.0" id="TopUI" alignment="TOP_CENTER">
-   <stylesheets>
-      <URL value="@/mazeGame/view/styleSheets/UI.css"/>
-   </stylesheets>
-   <children>
-      <Label text="Maze Game" id="gameName"/>
-   </children>
+    <stylesheets>
+        <URL value="@/mazeGame/view/styleSheets/UI.css"/>
+    </stylesheets>
+    <children>
+        <Label text="Maze Game" id="gameName"/>
+    </children>
 
 
 </GridPane>

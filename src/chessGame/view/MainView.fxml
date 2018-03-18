@@ -9,54 +9,54 @@
           prefHeight="400.0" prefWidth="600.0" stylesheets="@styleSheets/MainView.css"
           xmlns="http://javafx.com/javafx/8" fx:controller="chessGame.controller.MainViewController"
           styleClass="background">
-   <columnConstraints>
-      <ColumnConstraints minWidth="10.0" percentWidth="10.0" prefWidth="100.0"/>
-      <ColumnConstraints minWidth="10.0" percentWidth="80.0" prefWidth="100.0"/>
-      <ColumnConstraints minWidth="10.0" percentWidth="10.0" prefWidth="100.0"/>
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0"/>
-      <RowConstraints percentHeight="80.0"/>
-   </rowConstraints>
-   <children>
-      <AnchorPane GridPane.rowIndex="1">
-         <children>
-            <ListView fx:id="p0Captured" prefHeight="10.0" prefWidth="10.0" AnchorPane.bottomAnchor="150.0"
-                      AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0"
-                      GridPane.columnIndex="0" GridPane.rowIndex="1">
-               <opaqueInsets>
-                  <Insets/>
-               </opaqueInsets>
-            </ListView>
-         </children>
-      </AnchorPane>
-      <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1">
-         <children>
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" percentWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints minWidth="10.0" percentWidth="80.0" prefWidth="100.0"/>
+        <ColumnConstraints minWidth="10.0" percentWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0"/>
+        <RowConstraints percentHeight="80.0"/>
+    </rowConstraints>
+    <children>
+        <AnchorPane GridPane.rowIndex="1">
+            <children>
+                <ListView fx:id="p0Captured" prefHeight="10.0" prefWidth="10.0" AnchorPane.bottomAnchor="150.0"
+                          AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0"
+                          GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                </ListView>
+            </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
 
-            <ListView fx:id="p1Captured" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="150.0"
-                      AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0"
-                      GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-         </children>
-      </AnchorPane>
-      <AnchorPane>
-         <children>
-            <Label fx:id="p0" alignment="CENTER" text="Player1" AnchorPane.bottomAnchor="0.0"
-                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
-                   GridPane.rowIndex="1"/>
-         </children>
-      </AnchorPane>
-      <AnchorPane GridPane.columnIndex="2">
-         <children>
-            <Label fx:id="p1" alignment="CENTER" text="Player 2" AnchorPane.bottomAnchor="0.0"
-                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
-                   GridPane.columnIndex="2" GridPane.rowIndex="1"/>
-         </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
-         <children>
-            <fx:include source="/chessGame/view/GameView.fxml" fx:id="gameView" AnchorPane.bottomAnchor="0.0"
-                        AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
-         </children>
-      </AnchorPane>
-   </children>
+                <ListView fx:id="p1Captured" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="150.0"
+                          AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0"
+                          GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane>
+            <children>
+                <Label fx:id="p0" alignment="CENTER" text="Player1" AnchorPane.bottomAnchor="0.0"
+                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                       GridPane.rowIndex="1"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane GridPane.columnIndex="2">
+            <children>
+                <Label fx:id="p1" alignment="CENTER" text="Player 2" AnchorPane.bottomAnchor="0.0"
+                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                       GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+            <children>
+                <fx:include source="/chessGame/view/GameView.fxml" fx:id="gameView" AnchorPane.bottomAnchor="0.0"
+                            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+            </children>
+        </AnchorPane>
+    </children>
 </GridPane>

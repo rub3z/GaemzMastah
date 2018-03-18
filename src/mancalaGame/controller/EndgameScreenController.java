@@ -14,46 +14,46 @@ import java.util.ResourceBundle;
 
 public class EndgameScreenController implements Initializable {
 
-   @FXML
-   private Label resultText;
-   @FXML
-   private Button playAgain, exit;
-   private MainViewController mainViewController;
-   private MediaPlayer mediaPlayer;
+    @FXML
+    private Label resultText;
+    @FXML
+    private Button playAgain, exit;
+    private MainViewController mainViewController;
+    private MediaPlayer mediaPlayer;
 
-   @Override
-   public void initialize(URL location, ResourceBundle resources) {
-      playAgain.setOnMouseClicked(e -> {
-         mainViewController.rePlay();
-         mediaPlayer.stop();
-         Stage stage = (Stage) playAgain.getScene().getWindow();
-         stage.close();
-      });
-      exit.setOnMouseClicked(e -> {
-         mediaPlayer.stop();
-         mainViewController.close();
-         Stage stage = (Stage) playAgain.getScene().getWindow();
-         stage.close();
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        playAgain.setOnMouseClicked(e -> {
+            mainViewController.rePlay();
+            mediaPlayer.stop();
+            Stage stage = (Stage) playAgain.getScene().getWindow();
+            stage.close();
+        });
+        exit.setOnMouseClicked(e -> {
+            mediaPlayer.stop();
+            mainViewController.close();
+            Stage stage = (Stage) playAgain.getScene().getWindow();
+            stage.close();
 
-      });
+        });
 
-   }
+    }
 
-   public void setMainViewController(MainViewController mainViewController) {
-      this.mainViewController = mainViewController;
-   }
+    public void setMainViewController(MainViewController mainViewController) {
+        this.mainViewController = mainViewController;
+    }
 
-   public void result(String result) {
-      Media sound;
-      if (result.compareTo("Won") == 0) {
-         resultText.setText("Victory");
-         sound = new Media(new File("./src/mancalaGame/resources/winning.mp3").toURI().toString());
-      } else {
-         resultText.setText("Defeat");
-         sound = new Media(new File("./src/mancalaGame/resources/losing.mp3").toURI().toString());
-      }
+    public void result(String result) {
+        Media sound;
+        if (result.compareTo("Won") == 0) {
+            resultText.setText("Victory");
+            sound = new Media(new File("./src/mancalaGame/resources/winning.mp3").toURI().toString());
+        } else {
+            resultText.setText("Defeat");
+            sound = new Media(new File("./src/mancalaGame/resources/losing.mp3").toURI().toString());
+        }
 
-      mediaPlayer = new MediaPlayer(sound);
-      mediaPlayer.play();
-   }
+        mediaPlayer = new MediaPlayer(sound);
+        mediaPlayer.play();
+    }
 }

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <applications>
-   <application id="Maze">
-      <path>mazeGame.Maze</path>
-      <iconPath>/launcher/resources/MazeGameIcon.png</iconPath>
-   </application>
-   <application id="Mancala">
-      <path>mancalaGame.Mancala</path>
-      <iconPath>/launcher/resources/MancalaIcon.png</iconPath>
-   </application>
+    <application id="Maze">
+        <path>mazeGame.Maze</path>
+        <iconPath>/launcher/resources/MazeGameIcon.png</iconPath>
+    </application>
+    <application id="Mancala">
+        <path>mancalaGame.Mancala</path>
+        <iconPath>/launcher/resources/MancalaIcon.png</iconPath>
+    </application>
+    <application id="Chess">
+        <path>chessGame.Chess</path>
+        <iconPath>/launcher/resources/ChessIcon.png</iconPath>
+    </application>
 
 </applications>

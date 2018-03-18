@@ -2,18 +2,23 @@ package gaemzmastah;
 
 import javafx.application.Application;
 import javafx.beans.InvalidationListener;
-import javafx.beans.value.ChangeListener;
 import javafx.geometry.Bounds;
 import javafx.geometry.Point2D;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 public class GaemzMastah extends Application {
+
+    private Circle circle;
+    private Pane content;
+    private ScrollPane scrollPane;
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     // update circle position to be centered in the viewport
     private void update() {
@@ -30,10 +35,6 @@ public class GaemzMastah extends Application {
         circle.setCenterX(localCoordinates.getX());
         circle.setCenterY(localCoordinates.getY());
     }
-
-    private Circle circle;
-    private Pane content;
-    private ScrollPane scrollPane;
 
     @Override
     public void start(Stage primaryStage) {
@@ -57,10 +58,6 @@ public class GaemzMastah extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }

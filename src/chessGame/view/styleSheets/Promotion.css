@@ -1,0 +1,29 @@
+.rook0 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/B_Rook.png');
+}
+
+.rook1 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/W_Rook.png');
+}
+
+.bishop0 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/B_Bishop.png');
+}
+
+.bishop1 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/W_Bishop.png');
+}
+
+.knight0 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/B_Knight.png');
+}
+
+.knight1 {
+    -fx-background-image: url('/chessGame/resources/chessPieces/W_Knight.png');
+}
+
+.button {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size: 200px 200px;
+}

@@ -1,40 +1,42 @@
-package mazeGame;
+package chessGame;
 
+import chessGame.controller.MainViewController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
-import mazeGame.controller.MainViewController;
 
-public class Maze {
-    private static Maze mazeInstance;
+public class Chess {
+    private static Chess chessInstance;
 
-    public Maze() {
-        if (mazeInstance == null) {
-            mazeInstance = this;
+    public Chess() {
+        if (chessInstance == null) {
+            chessInstance = this;
             start();
         }
     }
 
-    private void start() {
+    public void start() {
         try {
             Stage stage = new Stage();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/mazeGame/view/MainView.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/chessGame/view/MainView.fxml"));
             Parent root = fxmlLoader.load();
-            MainViewController mainViewController = fxmlLoader.getController();
+            MainViewController controller = fxmlLoader.getController();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.setTitle("Chess");
             stage.setMaximized(true);
-            stage.setTitle("Maze");
             stage.show();
-            mainViewController.addKeyboardControl(stage.getScene());
+            controller.start();
+            controller.rePositionAllPieces(stage);
             stage.addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, event -> {
-                mazeInstance = null;
+                chessInstance = null;
             });
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 }
