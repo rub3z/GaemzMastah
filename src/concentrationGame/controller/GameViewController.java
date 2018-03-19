@@ -1,14 +1,5 @@
 package concentrationGame.controller;
 
-<<<<<<< HEAD
-import javafx.scene.control.Button;
-
-public class GameViewController {
-	
-	private Button card0, card1, card2, card3;
-	//sync test 3
-} 
-=======
 import javafx.animation.RotateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -135,4 +126,3 @@ public class GameViewController implements Initializable {
       this.mainViewController=mainViewController;
    }
 }
->>>>>>> master

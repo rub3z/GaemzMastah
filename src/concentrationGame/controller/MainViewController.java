@@ -1,8 +1,5 @@
 package concentrationGame.controller;
 
-<<<<<<< HEAD
-public class MainViewController {
-=======
 import concentrationGame.model.Cell;
 import concentrationGame.model.CellManager;
 import javafx.fxml.FXML;
@@ -69,5 +66,4 @@ public class MainViewController implements Initializable {
    }
 
 
->>>>>>> master
 }
