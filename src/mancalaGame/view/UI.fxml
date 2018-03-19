@@ -4,8 +4,8 @@
 <?import javafx.scene.layout.*?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="ui" stylesheets="@styleSheets/UI.css"
             xmlns="http://javafx.com/javafx/8" fx:controller="mancalaGame.controller.UIController">
-    <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" text="Mancala" AnchorPane.bottomAnchor="0.0"
-               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
-    </children>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Mancala" AnchorPane.bottomAnchor="0.0"
+             AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+   </children>
 </AnchorPane>

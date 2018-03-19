@@ -6,15 +6,15 @@
           stylesheets="@/mancalaGame/view/styleSheets/MainView.css"
           prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
           fx:controller="mancalaGame.controller.MainViewController">
-    <columnConstraints>
-        <ColumnConstraints hgrow="ALWAYS"/>
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints percentHeight="10.0" vgrow="ALWAYS"/>
-        <RowConstraints percentHeight="90.0" vgrow="ALWAYS"/>
-    </rowConstraints>
-    <children>
-        <fx:include source="/mancalaGame/view/UI.fxml" fx:id="ui" GridPane.rowIndex="0"/>
-        <fx:include source="/mancalaGame/view/GameView.fxml" fx:id="gameView" GridPane.rowIndex="1"/>
-    </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS"/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints percentHeight="10.0" vgrow="ALWAYS"/>
+      <RowConstraints percentHeight="90.0" vgrow="ALWAYS"/>
+   </rowConstraints>
+   <children>
+      <fx:include source="/mancalaGame/view/UI.fxml" fx:id="ui" GridPane.rowIndex="0"/>
+      <fx:include source="/mancalaGame/view/GameView.fxml" fx:id="gameView" GridPane.rowIndex="1"/>
+   </children>
 </GridPane>

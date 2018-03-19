@@ -2,19 +2,19 @@
 <?import java.net.URL?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
           fx:controller="mazeGame.controller.MainViewController">
-    <stylesheets>
-        <URL value="@/mazeGame/view/styleSheets/MainView.css"/>
-    </stylesheets>
-    <children>
-        <fx:include fx:id="ui" source="/mazeGame/view/UI.fxml" GridPane.rowIndex="0"/>
-        <fx:include fx:id="gameView" source="/mazeGame/view/GameView.fxml" GridPane.rowIndex="1"/>
-    </children>
-    <rowConstraints>
-        <RowConstraints percentHeight="10"/>
-        <RowConstraints percentHeight="90"/>
-        <RowConstraints vgrow="ALWAYS"/>
-    </rowConstraints>
-    <columnConstraints>
-        <ColumnConstraints hgrow="ALWAYS"/>
-    </columnConstraints>
+   <stylesheets>
+      <URL value="@/mazeGame/view/styleSheets/MainView.css"/>
+   </stylesheets>
+   <children>
+      <fx:include fx:id="ui" source="/mazeGame/view/UI.fxml" GridPane.rowIndex="0"/>
+      <fx:include fx:id="gameView" source="/mazeGame/view/GameView.fxml" GridPane.rowIndex="1"/>
+   </children>
+   <rowConstraints>
+      <RowConstraints percentHeight="10"/>
+      <RowConstraints percentHeight="90"/>
+      <RowConstraints vgrow="ALWAYS"/>
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS"/>
+   </columnConstraints>
 </GridPane>

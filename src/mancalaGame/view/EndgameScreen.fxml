@@ -7,40 +7,40 @@
 <GridPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="299.0" prefWidth="686.0"
           stylesheets="@styleSheets/EndgameScreen.css" xmlns="http://javafx.com/javafx/8"
           fx:controller="mancalaGame.controller.EndgameScreenController">
-    <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0"/>
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-    </rowConstraints>
-    <children>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.rowIndex="1">
-            <children>
-                <Button fx:id="playAgain" layoutX="51.0" mnemonicParsing="false" text="Play Again"
-                        AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
-                        AnchorPane.topAnchor="10.0"/>
-            </children>
-            <GridPane.margin>
-                <Insets/>
-            </GridPane.margin>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.columnIndex="1"
-                    GridPane.rowIndex="1">
-            <children>
-                <Button fx:id="exit" layoutX="68.0" mnemonicParsing="false" text="Exit" AnchorPane.bottomAnchor="25.0"
-                        AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0"/>
-            </children>
-            <GridPane.margin>
-                <Insets/>
-            </GridPane.margin>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.columnSpan="2">
-            <children>
-                <Label fx:id="resultText" alignment="CENTER" text="Label" AnchorPane.bottomAnchor="0.0"
-                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
-            </children>
-        </AnchorPane>
-    </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0"/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+      <RowConstraints minHeight="10.0" percentHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="playAgain" layoutX="51.0" mnemonicParsing="false" text="Play Again"
+                    AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                    AnchorPane.topAnchor="10.0"/>
+         </children>
+         <GridPane.margin>
+            <Insets/>
+         </GridPane.margin>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.columnIndex="1"
+                  GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="exit" layoutX="68.0" mnemonicParsing="false" text="Exit" AnchorPane.bottomAnchor="25.0"
+                    AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+         </children>
+         <GridPane.margin>
+            <Insets/>
+         </GridPane.margin>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="Background" GridPane.columnSpan="2">
+         <children>
+            <Label fx:id="resultText" alignment="CENTER" text="Label" AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+         </children>
+      </AnchorPane>
+   </children>
 </GridPane>

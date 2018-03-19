@@ -6,82 +6,82 @@
 <GridPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="800.0" styleClass="background"
           stylesheets="@styleSheets/EndgameScreen.css" xmlns="http://javafx.com/javafx/8"
           fx:controller="chessGame.controller.EndgameScreenController">
-    <columnConstraints>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
-        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0"/>
-    </columnConstraints>
-    <rowConstraints>
-        <RowConstraints minHeight="10.0" percentHeight="20.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-        <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-    </rowConstraints>
-    <children>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2">
-            <children>
-                <Label fx:id="displayText" alignment="CENTER" contentDisplay="CENTER" layoutY="-6.0"
-                       styleClass="victoryMessage" text="Label" AnchorPane.bottomAnchor="6.0"
-                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0"/>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-            <children>
-                <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="whiteSide" text="White: Remaining"
-                       AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                       AnchorPane.topAnchor="0.0"/>
-                <ListView fx:id="whiteRemaining" layoutY="30.0" prefHeight="200.0" prefWidth="200.0"
-                          styleClass="whiteSide" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0"
-                          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0"/>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-            <children>
-                <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="blackSide" text="Black: Remaining"
-                       AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                       AnchorPane.topAnchor="0.0"/>
-                <ListView fx:id="blackRemaining" layoutX="37.0" layoutY="5.0" prefHeight="200.0" prefWidth="200.0"
-                          AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
-                          AnchorPane.topAnchor="30.0">
-                    <styleClass>
-                        <String fx:value="blackSide"/>
-                        <String fx:value="list-cell1"/>
-                    </styleClass>
-                </ListView>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
-            <children>
-                <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="whiteSide" text="White: Captured"
-                       AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                       AnchorPane.topAnchor="0.0"/>
-                <ListView fx:id="whiteCaptured" layoutX="-12.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0"
-                          styleClass="whiteSide" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
-                          AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0"/>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-            <children>
-                <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" styleClass="blackSide" text="Black: Captured"
-                       AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                       AnchorPane.topAnchor="0.0"/>
-                <ListView fx:id="blackCaptured" prefHeight="200.0" prefWidth="200.0" styleClass="blackSide"
-                          AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
-                          AnchorPane.topAnchor="30.0"/>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
-            <children>
-                <Button fx:id="playAgain" layoutX="174.0" layoutY="18.0" mnemonicParsing="false" styleClass="playAgain"
-                        text="Play Again" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0"
-                        AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="25.0"/>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-            <children>
-                <Button fx:id="exit" layoutX="174.0" layoutY="18.0" mnemonicParsing="false" styleClass="exit"
-                        text="Exit" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0"
-                        AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="25.0"/>
-            </children>
-        </AnchorPane>
-    </children>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0"/>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0"/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" percentHeight="20.0" vgrow="SOMETIMES"/>
+      <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+      <RowConstraints minHeight="10.0" percentHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+      <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2">
+         <children>
+            <Label fx:id="displayText" alignment="CENTER" contentDisplay="CENTER" layoutY="-6.0"
+                   styleClass="victoryMessage" text="Label" AnchorPane.bottomAnchor="6.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0"/>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="whiteSide" text="White: Remaining"
+                   AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+            <ListView fx:id="whiteRemaining" layoutY="30.0" prefHeight="200.0" prefWidth="200.0"
+                      styleClass="whiteSide" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0"/>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="blackSide" text="Black: Remaining"
+                   AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+            <ListView fx:id="blackRemaining" layoutX="37.0" layoutY="5.0" prefHeight="200.0" prefWidth="200.0"
+                      AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                      AnchorPane.topAnchor="30.0">
+               <styleClass>
+                  <String fx:value="blackSide"/>
+                  <String fx:value="list-cell1"/>
+               </styleClass>
+            </ListView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" styleClass="whiteSide" text="White: Captured"
+                   AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+            <ListView fx:id="whiteCaptured" layoutX="-12.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0"
+                      styleClass="whiteSide" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+                      AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0"/>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" styleClass="blackSide" text="Black: Captured"
+                   AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0"/>
+            <ListView fx:id="blackCaptured" prefHeight="200.0" prefWidth="200.0" styleClass="blackSide"
+                      AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                      AnchorPane.topAnchor="30.0"/>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="playAgain" layoutX="174.0" layoutY="18.0" mnemonicParsing="false" styleClass="playAgain"
+                    text="Play Again" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0"
+                    AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="25.0"/>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="exit" layoutX="174.0" layoutY="18.0" mnemonicParsing="false" styleClass="exit"
+                    text="Exit" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0"
+                    AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="25.0"/>
+         </children>
+      </AnchorPane>
+   </children>
 </GridPane>
