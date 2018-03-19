@@ -101,7 +101,8 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1"
                   GridPane.rowSpan="2">
          <children>
-            <Button fx:id="pot6" layoutX="48.0" layoutY="102.0" mnemonicParsing="false" AnchorPane.bottomAnchor="5.0"
+            <Button fx:id="pot6" layoutX="48.0" layoutY="102.0" mnemonicParsing="false"
+                    AnchorPane.bottomAnchor="5.0"
                     AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
                <styleClass>
                   <String fx:value="largePot"/>

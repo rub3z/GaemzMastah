@@ -130,9 +130,10 @@ public class GameViewController {
       double c = scrollPanel.getViewportBounds().getWidth();
       scrollPanel.setHvalue(scrollPanel.getHmax() * ((b - 0.5 * c) / (a - c)));
    }
-   public void clearCanvas(){
-      gcMazeDrawable.clearRect(0,0,mazeDrawable.getWidth(),mazeDrawable.getHeight());
-      gcFogDrawable.clearRect(0,0,fogDrawable.getWidth(),fogDrawable.getHeight());
+
+   public void clearCanvas() {
+      gcMazeDrawable.clearRect(0, 0, mazeDrawable.getWidth(), mazeDrawable.getHeight());
+      gcFogDrawable.clearRect(0, 0, fogDrawable.getWidth(), fogDrawable.getHeight());
    }
 
 }

@@ -1,0 +1,21 @@
+.blueFate {
+    -fx-stroke: radial-gradient(center 50% 50%, radius 100%, white 30%, #000eff);
+    -fx-stroke-width: 100;
+    -fx-stroke-type: inside;
+}
+
+.redFate {
+    -fx-stroke: radial-gradient(center 50% 50%, radius 100%, white 30%, #e62000);
+    -fx-stroke-width: 100;
+    -fx-stroke-type: inside;
+}
+
+.yellowFate {
+    -fx-stroke: radial-gradient(center 50% 50%, radius 100%, white 30%, #ffff00);
+    -fx-stroke-width: 100;
+    -fx-stroke-type: inside;
+}
+
+.background {
+    -fx-background-color: #a1d6e2;
+}

@@ -1,0 +1,34 @@
+.background {
+    -fx-background-color: linear-gradient(to right, black, #dadada, black);
+}
+
+.transparentBackground {
+    -fx-background-color: transparent;
+}
+
+.whiteSide {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+}
+
+.blackSide {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.playAgain {
+
+}
+
+.exit {
+
+}
+
+.victoryMessage .text {
+    -fx-font-family: "Jokerman";
+
+    -fx-font-size: 50;
+    -fx-text-fill: white;
+    -fx-stroke: white;
+    -fx-stroke-width: 2px;
+}
