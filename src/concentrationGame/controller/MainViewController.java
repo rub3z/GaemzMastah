@@ -60,10 +60,13 @@ public class MainViewController implements Initializable {
     * Method to initialize the variable for the application.
     */
    public void start(){
-    for(Cell c:cellManager.getList()){
-       gameViewController.createCells(c.getPath());
-    }
+	   for(Cell c:cellManager.getList()){
+		   gameViewController.createCells(c.getPath());
+	   }
    }
-
+   
+   public void select(Cell selection) {
+	   
+   }
 
 }

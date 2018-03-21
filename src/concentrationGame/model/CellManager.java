@@ -12,19 +12,16 @@ public class CellManager {
 
    public CellManager(){
       list=new ArrayList<>();
-      createCell();
    }
 
    /**
     * Create cells
     */
-   public void createCell(){
+   public void createCell(int numberOfCards){
       list.clear();
-      list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
-      list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
-      list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
-      list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
-      list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
+      for(int i = 0; i < numberOfCards; i++) {
+    	  list.add(new Cell(true,false,0,"concentrationGame/resources/1.png"));
+      }
    }
 
    /**

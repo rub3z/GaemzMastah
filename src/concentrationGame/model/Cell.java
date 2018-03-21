@@ -54,6 +54,10 @@ public class Cell {
    public String getPath(){
       return path;
    }
+   
+   public void canFlip(boolean status) {
+	   canFlip = status;
+   }
 
 
 }

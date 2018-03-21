@@ -58,16 +58,16 @@ public class GameViewController implements Initializable {
       Image image0 = new Image(path, 800, 600, false, false);
       ImageView foreground = new ImageView();
       foreground.setImage(image0);
-      foreground.setFitHeight(200);
-      foreground.setFitWidth(200);
+      foreground.setFitHeight(100);
+      foreground.setFitWidth(100);
       foreground.setSmooth(true);
       foreground.setCache(true);
 
       Image image1 = new Image("concentrationGame/resources/background.png", 800, 600, false, false);
       ImageView background = new ImageView();
       background.setImage(image1);
-      background.setFitHeight(200);
-      background.setFitWidth(200);
+      background.setFitHeight(100);
+      background.setFitWidth(100);
       background.setSmooth(true);
       background.setCache(true);
 
