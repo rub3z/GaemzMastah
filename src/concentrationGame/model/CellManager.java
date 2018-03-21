@@ -12,6 +12,7 @@ public class CellManager {
 
    public CellManager(){
       list=new ArrayList<>();
+      createCell(52);
    }
 
    /**
